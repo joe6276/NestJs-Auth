@@ -1,0 +1,28 @@
+GET  http://localhost:3000/users
+### Post Request
+
+POST http://localhost:3000/users
+Content-Type: application/json
+
+{
+     "username":"joel",
+     "email":"joel@gmail.com",
+     "password":"12345678",
+     "name":"Jonathan NDambuki"
+}
+
+###
+GET  http://localhost:3000/users/joe
+
+
+###
+POST http://localhost:3000/users/login
+Content-Type: application/json
+
+{
+     "username":"joel",
+     "password":"12345678"
+}
+
+###
+GET  http://localhost:3000/users/profile
