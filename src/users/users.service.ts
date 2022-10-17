@@ -18,8 +18,12 @@ addUsers(User:UserDTO){
     return this.repo.save(user)
 }
 
-getOne(username:string){
-    return this.repo.findOne({where:{username}})
+getOne(email:string){
+    return this.repo.findOne({where:{email}})
+}
+
+getProf(){
+    return {name:"John Doe"}
 }
 
 

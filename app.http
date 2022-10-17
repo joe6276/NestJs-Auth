@@ -12,7 +12,7 @@ Content-Type: application/json
 }
 
 ###
-GET  http://localhost:3000/users/joe
+GET  http://localhost:3000/users/api/joel
 
 
 ###
@@ -20,9 +20,10 @@ POST http://localhost:3000/users/login
 Content-Type: application/json
 
 {
-     "username":"joel",
+     "email":"joel@gmail.com",
      "password":"12345678"
 }
 
 ###
 GET  http://localhost:3000/users/profile
+bearer Token :TokeneyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiSm9uYXRoYW4gTkRhbWJ1a2kiLCJ1c2VybmFtZSI6ImpvZWwiLCJpYXQiOjE2NjYwMjI2MDYsImV4cCI6MTY2NjAyMjk2Nn0.yLhk89nN1xBEXM6p8rpJo2f5L9hdCoQ1hrRWdNh2T-4
