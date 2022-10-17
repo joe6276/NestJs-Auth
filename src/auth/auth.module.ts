@@ -7,11 +7,14 @@ import { JWTStrategy } from './Jwt.Strategy';
 import { LocalStrategy } from './local.strategy';
 
 @Module({
-  providers: [AuthService,LocalStrategy, JWTStrategy],
-  imports:[forwardRef(() => UsersModule),PassportModule,  JwtModule.register({
-    secret:'fdgfsdhgbjdfsghfdsgdfgjjdfgkjsdfjg',
-    signOptions:{expiresIn:'60s'}
+ 
+  imports:[forwardRef(() => UsersModule),
+    PassportModule,
+     JwtModule.register({
+    secret:'secret',
+    signOptions:{expiresIn:'360s'}
   })],
+   providers: [AuthService,LocalStrategy, JWTStrategy],
   exports:[AuthService]
 })
 export class AuthModule {}
